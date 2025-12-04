@@ -170,8 +170,8 @@ frontend/src/
 ## 📧 Contact
 
 Ahmed Ighilahriz
-Email : Ahmed.ighilahriz29@gmail.com
-Linkedin: https://www.linkedin.com/in/ahmed-ighilahriz-9b4a04168/
+- Email : Ahmed.ighilahriz29@gmail.com
+- Linkedin: https://www.linkedin.com/in/ahmed-ighilahriz-9b4a04168/
 
 
 ---
