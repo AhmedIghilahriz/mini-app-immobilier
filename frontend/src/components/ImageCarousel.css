@@ -1,0 +1,103 @@
+.image-carousel {
+  position: relative;
+  width: 100%;
+  height: 220px; /* ← Hauteur fixe */
+  overflow: hidden;
+  background: #f0f0f0;
+}
+
+.image-carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* ✅ Placeholder avec la même hauteur que les vraies images */
+.carousel-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 220px; /* ← MÊME hauteur que .image-carousel */
+  background: linear-gradient(135deg, #e8eaf6, #c5cae9);
+  color: #5c6bc0;
+}
+
+.carousel-placeholder span {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.7;
+}
+
+.carousel-placeholder p {
+  font-size: 0.9rem;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+/* Boutons chevron */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  z-index: 2;
+}
+
+.carousel-btn:hover {
+  background: white;
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.carousel-btn-prev {
+  left: 12px;
+}
+
+.carousel-btn-next {
+  right: 12px;
+}
+
+/* Indicateurs (dots) */
+.carousel-dots {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 2;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  transition: all 0.3s;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+.dot.active {
+  background: white;
+  transform: scale(1.2);
+}
+
+.dot:hover {
+  background: rgba(255, 255, 255, 0.9);
+}

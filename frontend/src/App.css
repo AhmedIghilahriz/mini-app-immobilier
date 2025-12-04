@@ -1,0 +1,16 @@
+.app { min-height: 100vh; padding: 2rem; }
+.btn {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+.btn-primary { background: #1e40af; color: white; box-shadow: 0 4px 15px rgba(30,64,175,0.3); }
+.btn-primary:hover { background: #1e3a8a; transform: translateY(-2px); }
+.btn-secondary { background: #e2e8f0; color: #1e293b; }
+.btn-secondary:hover { background: #cbd5e1; }
+.btn-danger { background: #dc2626; color: white; }
+.btn-danger:hover { background: #b91c1c; }

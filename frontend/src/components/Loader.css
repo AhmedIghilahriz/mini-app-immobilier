@@ -1,0 +1,42 @@
+/* src/components/Loader.css → LE PLUS BEAU LOADER IMMOBILIER 2025 */
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 0.4s ease;
+}
+
+.loader-content {
+  text-align: center;
+}
+
+.spinner {
+  width: 70px;
+  height: 70px;
+  border: 6px solid #e2e8f0;
+  border-top: 6px solid #1e40af;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 1.5rem;
+}
+
+.loader-text {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #1e293b;
+  letter-spacing: 0.5px;
+  margin-top: 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

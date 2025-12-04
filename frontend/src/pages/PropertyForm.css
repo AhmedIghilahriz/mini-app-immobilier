@@ -1,0 +1,388 @@
+/* Conteneur principal */
+.property-form-container {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+}
+
+/* Bouton retour */
+.btn-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #1e40af;
+  font-weight: 600;
+  font-size: 1.15rem;
+  margin-bottom: 2.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  padding: 0;
+}
+
+.btn-back:hover {
+  color: #1e3a8a;
+  text-decoration: underline;
+}
+
+/* Card du formulaire */
+.property-form-card {
+  background: white;
+  padding: 4rem 3.5rem;
+  border-radius: 28px;
+  box-shadow: 0 25px 80px rgba(0,0,0,0.14);
+  border: 1px solid #e2e8f0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Barre de couleur en haut */
+.property-form-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(90deg, #1e40af, #3b82f6);
+}
+
+/* Titre */
+.property-form-card h1 {
+  font-size: 2.6rem;
+  color: #1e293b;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 1.5rem;
+}
+
+.property-form-card h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 5px;
+  background: #1e40af;
+  border-radius: 3px;
+}
+
+/* Groupe de formulaire */
+.form-group {
+  margin-bottom: 2.2rem;
+}
+
+.form-group label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+  color: #1e293b;
+  font-size: 1.1rem;
+  letter-spacing: 0.3px;
+}
+
+.label-icon {
+  font-size: 1.3rem;
+}
+
+/* Inputs, selects, textarea */
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 18px 20px;
+  border: 2.5px solid #e2e8f0;
+  border-radius: 16px;
+  font-size: 1.1rem;
+  background: #fafbfc;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #94a3b8;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #1e40af;
+  background: white;
+  box-shadow: 0 0 0 6px rgba(30, 64, 175, 0.15);
+  transform: translateY(-1px);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Hint sous les champs */
+.form-hint {
+  display: block;
+  margin-top: 0.6rem;
+  font-size: 0.95rem;
+  color: #64748b;
+  font-style: italic;
+}
+
+/* Rangée (2 champs côte à côte) */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+
+/* Aperçu de l'image */
+.image-preview {
+  margin: 1.5rem 0 2.5rem 0;
+  padding: 1.5rem;
+  background: #f8fafc;
+  border-radius: 16px;
+  border: 2px dashed #cbd5e1;
+}
+
+.preview-label {
+  font-weight: 600;
+  color: #475569;
+  margin-bottom: 1rem;
+}
+
+.image-preview img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Box d'erreurs */
+.error-box {
+  background: #fef2f2;
+  color: #dc2626;
+  padding: 1.4rem;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+  border: 1px solid #fecaca;
+  font-weight: 500;
+}
+
+.error-box p {
+  margin: 0.4rem 0;
+}
+
+/* Actions (boutons) */
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  margin-top: 3.5rem;
+  padding-top: 2rem;
+  border-top: 2px solid #f1f5f9;
+}
+
+.form-actions .btn {
+  padding: 16px 36px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  border-radius: 16px;
+  min-width: 160px;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.form-actions .btn-secondary {
+  background: #e2e8f0;
+  color: #475569;
+}
+
+.form-actions .btn-secondary:hover {
+  background: #cbd5e1;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.form-actions .btn-primary {
+  background: #1e40af;
+  color: white;
+  box-shadow: 0 8px 25px rgba(30, 64, 175, 0.35);
+}
+
+.form-actions .btn-primary:hover:not(:disabled) {
+  background: #1e3a8a;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(30, 64, 175, 0.45);
+}
+
+.form-actions .btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .property-form-container {
+    padding: 0 1rem;
+    margin: 2rem auto;
+  }
+
+  .property-form-card {
+    padding: 3rem 2rem;
+  }
+
+  .property-form-card h1 {
+    font-size: 2rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .form-actions .btn {
+    width: 100%;
+  }
+}
+
+/* ... ton CSS existant ... */
+
+/* Zone de Drag & Drop */
+.drop-zone {
+  border: 3px dashed #cbd5e1;
+  border-radius: 16px;
+  padding: 3rem;
+  text-align: center;
+  background: #f8fafc;
+  transition: all 0.3s ease;
+  margin-bottom: 1.5rem;
+}
+
+.drop-zone.drag-active {
+  border-color: #1e40af;
+  background: #eff6ff;
+  transform: scale(1.02);
+}
+
+.drop-zone-content {
+  pointer-events: none;
+}
+
+.drop-icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.drop-zone p {
+  margin: 0.5rem 0;
+  color: #475569;
+  font-weight: 600;
+}
+
+.drop-hint {
+  font-size: 0.9rem;
+  color: #94a3b8 !important;
+  font-weight: 400 !important;
+}
+
+/* Input URL d'image */
+.image-url-input {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.image-url-input input {
+  flex: 1;
+  padding: 14px 18px;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 1rem;
+}
+
+.image-url-input input:focus {
+  border-color: #1e40af;
+  outline: none;
+}
+
+.btn-add-image {
+  padding: 14px 28px;
+  background: #1e40af;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.btn-add-image:hover {
+  background: #1e3a8a;
+  transform: translateY(-2px);
+}
+
+/* Aperçu des images */
+.images-preview {
+  margin: 2rem 0;
+  padding: 2rem;
+  background: #f8fafc;
+  border-radius: 16px;
+  border: 2px solid #e2e8f0;
+}
+
+.preview-title {
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.images-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.5rem;
+}
+
+.image-preview-item {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  background: #e2e8f0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.image-preview-item:hover {
+  transform: scale(1.05);
+}
+
+.image-preview-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btn-remove-image {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background: rgba(220, 38, 38, 0.95);
+  color: white;
+}
