@@ -2,6 +2,10 @@
 
 Application de gestion d'annonces immobilières développée avec **React** (TypeScript) et **Fastify**, avec upload d'images et carousel.
 
+> 💻 Démo en ligne :  
+>  Interface utilisateur : https://calm-taffy-0c825a.netlify.app  
+> API : https://mini-app-immobilier-deploy.onrender.com/api/properties
+
 ---
 
 ## 🚀 Lancement du projet
