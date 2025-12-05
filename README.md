@@ -4,11 +4,11 @@ Application de gestion d'annonces immobilières développée avec **React** (Typ
 
 > 💻 Démo en ligne :  
 >  Interface utilisateur : https://calm-taffy-0c825a.netlify.app  
-> API : https://mini-app-immobilier-deploy.onrender.com/api/properties 
-⚠️ **Petite info** :
-⏳ Le premier chargement peut donc prendre 30 secondes à 1 minute 30, c’est totalement normal car :
- > Le backend tourne sur une instance gratuite de [![Render free instance](https://img.shields.io/badge/Render-Free_Instance-46bd92?style=flat&logo=render)](https://render.com)
-> Merci pour votre patience, c’est le prix du gratuit 😄
+> API : https://mini-app-immobilier-deploy.onrender.com/api/properties
+> ⚠️ **Petite info** :
+> ⏳ Le premier chargement peut donc prendre 30 secondes à 1 minute 30, c’est totalement normal car :
+> Le backend tourne sur une instance gratuite de [![Render free instance](https://img.shields.io/badge/Render-Free_Instance-46bd92?style=flat&logo=render)](https://render.com)
+>  Merci pour votre patience, c’est le prix du gratuit 😄
 <img width="780" height="45" alt="image" src="https://github.com/user-attachments/assets/36bd17a7-260b-4ebb-8744-7cd771cfba44" />
 
  
